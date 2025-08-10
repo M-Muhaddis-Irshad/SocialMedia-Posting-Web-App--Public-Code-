@@ -199,13 +199,14 @@ document.getElementById("user_name").addEventListener("keydown",
 
 // Both codes are doing same work just syntax is changed_________________________________
 
-function showCommentBox(clickedIcon) {
-    const postDiv = clickedIcon.closest(".child_2");
+function showCommentBox(cmnt_icon_clicked) {
+    const post = cmnt_icon_clicked.closest(`#created_post`);
 
-    // Avoid multiple comment boxes in the same post
-    if (postDiv.querySelector(".comment_box")) return;
+    if (post.querySelector(`#comment_box`)) {
+        return;
+    }
 
-    postDiv.innerHTML += `
+    post.innerHTML += `
     
             <div id="comment_box" class="comment_box mt-4">
             
@@ -240,7 +241,7 @@ function showCommentBox(clickedIcon) {
 
                     </div>
 
-                    <button onclick="post_comment()" class="cmnt_send_btn gap-2">
+                    <button onclick="post_comment(this)" class="cmnt_send_btn gap-2">
                         <span class="comment_send">
                             Send
                         </span>
@@ -252,6 +253,8 @@ function showCommentBox(clickedIcon) {
                 </div>
             </div>   
 `
+
+    document.getElementById(`comment_textarea`).focus()
 }
 
 function comment_Style(styles) {
@@ -281,8 +284,9 @@ const full_date_2 = `
                  ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}
 `;
 
-function post_comment() {
-    const created_post = document.getElementById("created_post");
+function post_comment(cmnt_send_btn_click) {
+
+    const cmnt_post = cmnt_send_btn_click.closest(`#created_post`);
 
     // Comment User Name start's
 
@@ -314,11 +318,8 @@ function post_comment() {
 
     // Remove Styles from textarea after posting comment________________________________________
     cmnt_txtarea.classList.remove("textarea_bold", "textarea_italic", "textarea_underline");
-    // cmnt_txtarea.classList.remove("textarea_italic");
-    // cmnt_txtarea.classList.remove("textarea_underline");
 
-
-    created_post.innerHTML += `
+    cmnt_post.innerHTML += `
     <div class="posted_comment my-4 p-4">
 
                 <div class="posted_cmnt_name_container">
@@ -351,7 +352,7 @@ function post_comment() {
 
                 </div>
 
-                <div class="posted_coment_content mt-3 p-2" style="font-weight: ${fontWeight}; font-style: ${fontStyle}; text-decoration: ${textDecoration};">
+                <div class="posted_coment_content" style="font-weight: ${fontWeight}; font-style: ${fontStyle}; text-decoration: ${textDecoration};">
                     ${cmnt_txtarea.value}
                 </div>
 
@@ -369,6 +370,8 @@ function post_comment() {
 
             </div>
     `
+
+    document.getElementById(`comment_box`).remove();
 }
 
 // Posted Comments end's
