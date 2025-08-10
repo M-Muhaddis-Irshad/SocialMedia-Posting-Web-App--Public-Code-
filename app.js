@@ -1,3 +1,8 @@
+// const post_Arr = [];
+
+// const randomId = Math.random()
+// console.log(randomId);
+
 // Textarea Function Start's
 
 let final_text_clr = "";
@@ -73,70 +78,81 @@ function post() {
     textarea_bg.style.color = `black`;
 
     let newPostDiv = document.getElementById("body_div");
+
+    // post_Arr.push(
+    // )
+
     newPostDiv.innerHTML += `
-        <div class="child_2" id="created_post">
+    <div class="child_2" id="created_post">
 
-            <div class="div_1st">
+        <div class="div_1st">
 
-                <div class="div_1st_child_1">
-                    <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
+            <div class="div_1st_child_1">
+                <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
 
-                    <h5>
-                        <span>
-                            ${userName.value}
-                        </span>
-                        <span>
-                            <h6>
-                                ${full_date}
-                            </h6>
-                        </span>
-                    </h5>
-
-                </div>
-
-                <div class="div_1st_child_2">
-
-                    <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Post">
-                        <div class="del_post">
-                            <i class="fa-solid fa-trash"></i>
-                        </div>
-                    </abbr>
-
-                </div>
-
+                <h5>
+                    <span>
+                        ${userName.value}
+                    </span>
+                    <span>
+                        <h6>
+                            ${full_date}
+                        </h6>
+                    </span>
+                </h5>
 
             </div>
 
-            <!-- Created Post -->
+            <div class="div_1st_child_2">
 
-
-            <div class="div_2nd after_post mt-3 mb-3" style="background-image: ${Crnt_bgImage}; color: ${final_text_clr};">
-                ${textarea_bg.value}
-            </div>
-
-
-            <!-- Created Post -->
-
-            <!-- Icons -->
-
-            <div class="icons_Container">
-
-                <i onclick="showCommentBox()" class="material-symbols-outlined cmnt">
-                    chat
-                </i>
-
-                <i onclick="this.classList.add('likeFill')" class="material-symbols-outlined like">
-                    thumb_up
-                </i>
-
-                <i onclick="this.classList.add('heartFill')" class="material-icons heart">
-                    favorite
-                </i>
+                <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Post">
+                    <div class="del_post">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </abbr>
 
             </div>
+
 
         </div>
-    `
+
+        <!-- Created Post -->
+
+
+        <div class="div_2nd after_post mt-3 mb-3" style="background-image: ${Crnt_bgImage}; color: ${final_text_clr};">
+            ${textarea_bg.value}
+        </div>
+
+
+        <!-- Created Post -->
+
+        <!-- Icons -->
+
+        <div class="icons_Container">
+
+            <i onclick="showCommentBox(this)" class="material-symbols-outlined cmnt">
+                chat
+            </i>
+
+            <i onclick="this.classList.add('likeFill')" class="material-symbols-outlined like">
+                thumb_up
+            </i>
+
+            <i onclick="this.classList.add('heartFill')" class="material-icons heart">
+                favorite
+            </i>
+
+        </div>
+
+    </div>
+`
+
+    // arr = [1,2,3,4,5,6,7,8,9,0]
+
+    // for (let i = 0; i < post_Arr.length; i++) {
+    //     const element = post_Arr[i];
+    //     console.log(element);
+    // }
 
     textarea_bg.style.backgroundImage = `none`;
     textarea_bg.value = ""
@@ -165,6 +181,8 @@ function clrAll() {
 
 }
 
+// Both codes are doing same work just syntax is changed_________________________________
+
 document.getElementById("user_name").addEventListener("keydown",
     function (event) {
         if (event.key === "Enter") {
@@ -179,10 +197,15 @@ document.getElementById("user_name").addEventListener("keydown",
 
 // Comment Box Section start's
 
-function showCommentBox() {
-    const created_post = document.getElementById("created_post");
-    // cmnt_box.style.display = "block"
-    created_post.innerHTML += `
+// Both codes are doing same work just syntax is changed_________________________________
+
+function showCommentBox(clickedIcon) {
+    const postDiv = clickedIcon.closest(".child_2");
+
+    // Avoid multiple comment boxes in the same post
+    if (postDiv.querySelector(".comment_box")) return;
+
+    postDiv.innerHTML += `
     
             <div id="comment_box" class="comment_box mt-4">
             
@@ -273,6 +296,11 @@ function post_comment() {
     // Textarea conditions start's________________________________________
     const cmnt_txtarea = document.getElementById("comment_textarea");
 
+    const textStyles = getComputedStyle(cmnt_txtarea)
+    const fontWeight = textStyles.fontWeight;
+    const fontStyle = textStyles.fontStyle;
+    const textDecoration = textStyles.textDecoration;
+
     if (cmnt_txtarea.value === "" || cmnt_txtarea.value.trim() === "") {
         cmnt_txtarea.classList.add("textareaError")
         cmnt_txtarea.placeholder = "Please enter this field"
@@ -283,6 +311,12 @@ function post_comment() {
         cmnt_txtarea.placeholder = "Add Comment..."
     }
     // Textarea conditions end's________________________________________
+
+    // Remove Styles from textarea after posting comment________________________________________
+    cmnt_txtarea.classList.remove("textarea_bold", "textarea_italic", "textarea_underline");
+    // cmnt_txtarea.classList.remove("textarea_italic");
+    // cmnt_txtarea.classList.remove("textarea_underline");
+
 
     created_post.innerHTML += `
     <div class="posted_comment my-4 p-4">
@@ -317,7 +351,7 @@ function post_comment() {
 
                 </div>
 
-                <div class="posted_coment_content mt-3 p-2">
+                <div class="posted_coment_content mt-3 p-2" style="font-weight: ${fontWeight}; font-style: ${fontStyle}; text-decoration: ${textDecoration};">
                     ${cmnt_txtarea.value}
                 </div>
 
@@ -338,3 +372,72 @@ function post_comment() {
 }
 
 // Posted Comments end's
+
+
+
+
+
+// newPostDiv.innerHTML += `
+//     <div class="child_2" id="created_post">
+
+//         <div class="div_1st">
+
+//             <div class="div_1st_child_1">
+//                 <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
+
+//                 <h5>
+//                     <span>
+//                         ${userName.value}
+//                     </span>
+//                     <span>
+//                         <h6>
+//                             ${full_date}
+//                         </h6>
+//                     </span>
+//                 </h5>
+
+//             </div>
+
+//             <div class="div_1st_child_2">
+
+//                 <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Post">
+//                     <div class="del_post">
+//                         <i class="fa-solid fa-trash"></i>
+//                     </div>
+//                 </abbr>
+
+//             </div>
+
+
+//         </div>
+
+//         <!-- Created Post -->
+
+
+//         <div class="div_2nd after_post mt-3 mb-3" style="background-image: ${Crnt_bgImage}; color: ${final_text_clr};">
+//             ${textarea_bg.value}
+//         </div>
+
+
+//         <!-- Created Post -->
+
+//         <!-- Icons -->
+
+//         <div class="icons_Container">
+
+//             <i onclick="showCommentBox()" class="material-symbols-outlined cmnt">
+//                 chat
+//             </i>
+
+//             <i onclick="this.classList.add('likeFill')" class="material-symbols-outlined like">
+//                 thumb_up
+//             </i>
+
+//             <i onclick="this.classList.add('heartFill')" class="material-icons heart">
+//                 favorite
+//             </i>
+
+//         </div>
+
+//     </div>
+// `
