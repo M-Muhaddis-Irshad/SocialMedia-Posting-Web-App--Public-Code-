@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Socialbook</title>
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="fav_icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav_icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav_icon/favicon-16x16.png">
+    <link rel="manifest" href="fav_icon/site.webmanifest">
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/bdc08be0ff.js" crossorigin="anonymous"></script>
+
+    <!-- GoogleFonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+            <div class="logo_container">
+                <img class="logo" src="Logo/logo.png" alt="Socialbook Logo">
+            </div>
+            <button class="navbar-toggler mt-4 mb-4" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav gap-4 justify-content-center nav_ul navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <h5>
+                            <a class="links" aria-current="page" href="index.html">Home</a>
+                        </h5>
+                    </li>
+                    <li class="nav-item">
+                        <h5>
+                            <a class="links" href="development.html">About Us</a>
+                        </h5>
+                    </li>
+                    <li class="nav-item">
+                        <h5>
+                            <a class="links" href="development.html">Login</a>
+                        </h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="body_container" id="body_div">
+
+        <div class="child_1">
+
+            <div class="div_1 mb-1">
+
+                <div class="div_1_child_1st">
+
+                    <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
+
+                    <label for="user_name">
+                        <h5>
+                            Enter User Name:
+                        </h5>
+                    </label>
+
+                </div>
+
+                <div class="child_2nd">
+
+                    <!-- Delete Button Start's -->
+
+                    <abbr onclick="clrAll()" title="Clear All">
+                        <div class="del_post">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </abbr>
+
+                    <!-- Delete Button End's -->
+
+                </div>
+
+
+            </div>
+            <input type="text" placeholder="This field is optional" id="user_name">
+
+            <textarea id="user_post" placeholder="Post anything you want" rows="10" cols="50"></textarea>
+
+            <!-- Background Colors Start's -->
+
+            <div class="div_2 d-flex">
+
+                <div id="white" onclick="apply_bg_clr(this)" class="div_1st"></div>
+                <div id="black" onclick="apply_bg_clr(this)" class="div_2nd"></div>
+                <div id="black" onclick="apply_bg_clr(this)" class="div_3rd"></div>
+                <div id="white" onclick="apply_bg_clr(this)" class="div_4th"></div>
+                <div id="white" onclick="apply_bg_clr(this)" class="div_5th"></div>
+                <div id="white" onclick="apply_bg_clr(this)" class="div_6th"></div>
+
+            </div>
+
+            <!-- Background Colors End's -->
+
+            <button onclick="post()" class="mt-3">Post</button>
+
+        </div>
+
+
+
+        <!-- <div class="child_2" id="created_post"> -->
+
+            <!-- <div class="div_1st">
+
+                <div class="div_1st_child_1">
+                    <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
+
+                    <h5>
+                        <span>
+                            userInput.value
+                        </span>
+                        <span>
+                            <h6>
+                                date
+                            </h6>
+                        </span>
+                    </h5>
+
+                </div>
+
+                <div class="created_post_del_btn">
+
+                    <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Post">
+                        <div class="del_post">
+                            <i class="fa-solid fa-trash"></i>
+                        </div>
+                    </abbr>
+
+                </div>
+
+
+            </div> -->
+
+            <!-- Created Post________________________________________________- -->
+
+            <!-- <div class="div_2nd mt-3 mb-3">
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab eligendi itaque laboriosam aliquid aperiam
+                eum? Similique blanditiis sed mollitia illum consequatur, tempora eos, dignissimos accusamus modi
+                aliquid tenetur quaerat consequuntur.
+
+            </div> -->
+
+            <!-- Created Post________________________________________________- -->
+
+            <!-- Icons Start's_________________________________________________________ -->
+
+            <!-- <div class="icons_Container">
+
+                <i onclick="comment()" class="material-symbols-outlined cmnt">
+                    chat
+                </i>
+
+                <i onclick="this.classList.add('likeFill')" class="material-symbols-outlined like">
+                    thumb_up
+                </i>
+
+                <i onclick="this.classList.add('heartFill')" class="material-icons heart">
+                    favorite
+                </i>
+
+            </div> -->
+
+            <!-- Icons End's_________________________________________________________ -->
+
+
+
+
+
+
+
+            <!-- Comment Section Start's________________________________________________________ -->
+
+            <!-- <div id="comment_box" class="comment_box mt-4">
+
+                <div class="cmnt_user_container">
+
+                    <div>
+                        <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture" class="cmnt_pfp">
+                        <label for="cmnt_user_name">Your Name:</label>
+                    </div>
+
+                    <input type="text" name="" id="cmnt_user_name" placeholder="Enter your name...">
+                </div>
+
+                <textarea id="comment_textarea" placeholder="Add Comment..." rows="4"></textarea>
+
+                <div class="cmnt_btns">
+
+                    <div class="cmnt_styles">
+
+                        <span onclick="comment_Style(this)" id="bold" class="material-symbols-outlined bold">
+                            <abbr title="Bold">format_bold</abbr>
+                        </span>
+                        <span onclick="comment_Style(this)" id="italic" class="material-symbols-outlined italic">
+                            <abbr title="Italic">format_italic</abbr>
+                        </span>
+                        <span onclick="comment_Style(this)" id="underline" class="material-symbols-outlined underline">
+                            <abbr title="Underline">format_underlined</abbr>
+                        </span>
+                        <span onclick="comment_Style(this)" id="clrAll" class="material-symbols-outlined eraser">
+                            <abbr title="Clear All Styles">ink_eraser</abbr>
+                        </span>
+
+                    </div>
+
+                    <button onclick="post_comment()" class="cmnt_send_btn gap-2">
+                        <span class="comment_send">
+                            Send
+                        </span>
+                        <span class="material-symbols-outlined send_icon">
+                            send
+                        </span>
+                    </button>
+
+                </div>
+
+            </div> -->
+
+            <!-- Comment Section End's________________________________________________________ -->
+
+            <!-- Comment After posting Start's__________________________________________________________________ -->
+
+            <!-- <div class="posted_comment my-4 p-4">
+
+                <div class="posted_cmnt_name_container">
+
+                    <div class="div_1">
+
+                        <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture" class="posted_cmnt_pfp">
+
+                        <div>
+                            <span>
+                                userInput.value
+                            </span>
+                            <br>
+                            <span>
+                                date
+                            </span>
+                        </div>
+
+                    </div>
+
+                    <div class="posted_cmnt_del_btn">
+
+                        <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Comment">
+                            <div class="del_cmnt">
+                                <i class="fa-solid fa-trash"></i>
+                            </div>
+                        </abbr>
+
+                    </div>
+
+                </div>
+
+                <div class="posted_coment_content mt-3 p-2">
+                    comment_textarea.value
+                </div>
+
+                <div class="post_icons_Container mx-1">
+
+                    <i title="Like" onclick="this.classList.add('likeFill')" class="material-symbols-outlined post_like">
+                        thumb_up
+                    </i>
+
+                    <i title="Love" onclick="this.classList.add('heartFill')" class="material-icons post_heart">
+                        favorite
+                    </i>
+
+                </div>
+
+            </div> -->
+
+            <!-- Comment After posting End's__________________________________________________________________ -->
+
+        </div>
+
+
+    </div>
+
+    <script src="app.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

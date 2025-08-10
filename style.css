@@ -1,0 +1,695 @@
+body {
+    padding: 0;
+    background-image: radial-gradient(rgb(0, 137, 187), rgb(0, 76, 104));
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+/* Navbar css start's ______________________________________________________________________*/
+
+.navbar {
+    background-image: radial-gradient(rgb(0, 187, 255), rgb(2, 139, 155));
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+.logo_container {
+    padding: 5px;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+.logo_container:hover {
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 10px 0px cyan;
+}
+
+.nav_ul {
+    margin: auto;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.links {
+    text-decoration: none;
+    color: aqua !important;
+    text-shadow: 2px 2px 2px darkblue;
+    transition-duration: 0.4s !important;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.links:hover {
+    color: darkblue !important;
+    text-shadow: 2px 2px 2px aqua;
+    padding: 10px;
+    border-radius: 60%;
+    box-shadow: inset 0px 0px 10px 0px cornsilk;
+    /* background-color: rgb(0, 128, 255); */
+}
+
+.links:focus {
+    text-decoration: none;
+    color: aqua !important;
+    text-shadow: 2px 2px 2px darkblue;
+}
+
+/* Hamburger ______________________________________________________________________*/
+
+.navbar-toggler {
+    color: rgb(0, 187, 255) !important;
+}
+
+.navbar-toggler:hover {
+    background-color: aquamarine;
+}
+
+.navbar-toggler:focus {
+    background-color: rgb(0, 187, 255);
+}
+
+/* Hamburger ______________________________________________________________________*/
+
+/* Navbar css end's ______________________________________________________________________*/
+
+
+/* Body css start's ______________________________________________________________________*/
+
+/* Body 1st container start's______________________________________________________________________*/
+
+.body_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.child_1 {
+    width: 80%;
+    padding: 50px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(0, 187, 207));
+}
+
+/* Body 1st container 1st div start's ______________________________________________________________________*/
+
+.child_1 .div_1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div_1_child_1st img {
+    width: 7vw;
+    border: cyan;
+    transition: 400ms;
+}
+
+.div_1_child_1st img:hover {
+    border-radius: 50%;
+    border: 0.5px solid cyan;
+}
+
+.div_1_child_1st {
+    cursor: pointer;
+    color: rgb(6, 58, 107);
+    transition: 400ms;
+}
+
+.div_1_child_1st:hover {
+    color: rgb(135, 197, 255);
+}
+
+
+abbr .fa-solid {
+    cursor: pointer;
+}
+
+/* Clear-All button start's */
+
+.del_post {
+    font-size: 3vw;
+    padding: 0.6vw 1.4vw;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+.del_post:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Clear-All button end's */
+
+/* Body 1st container 1st div end's ______________________________________________________________________*/
+
+.child_1 input {
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px 10px;
+}
+
+.child_1 textarea {
+    margin: 20px 0px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-size: cover;
+}
+
+.placeholder_clr::placeholder {
+    color: red;
+    opacity: 90%;
+}
+
+/* Post background colors start's ______________________________________________________________________*/
+
+.div_2 {
+    margin: auto;
+    gap: 3vw;
+}
+
+.div_2 div {
+    cursor: pointer;
+}
+
+.div_2 .div_1st {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    background-image: url(imgs/img1.jpg);
+    background-size: 180%;
+    transition: 0.6s;
+}
+
+.div_2 .div_1st::before:hover {
+    border: 1px solid #4bc0c8;
+}
+
+.div_2 .div_2nd {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    border: 1px solid #24fe41;
+    background-image: linear-gradient(to right, #fdfc47, #24fe41);
+}
+
+.div_2 .div_3rd {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    border: 1px solid #b6fbff;
+    background-image: linear-gradient(to right, #83a4d4, #b6fbff);
+}
+
+.div_2 .div_4th {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    border: 1px solid #00c6ff;
+    background-image: linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.div_2 .div_5th {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    border: 1px solid #4a9eff;
+    background-image: linear-gradient(326deg, #00438b, #0077ff, #4a9eff);
+}
+
+.div_2 .div_6th {
+    color: white;
+    width: 6vw;
+    height: 6vw;
+    border-radius: 10%;
+    border: 1px solid rgba(2, 0, 36, 1);
+    background-image: linear-gradient(330deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1));
+}
+
+/* Post background colors end's ______________________________________________________________________*/
+
+/* Post button start's  ______________________________________________________________________*/
+
+.child_1 button {
+    width: 36vw;
+    margin: auto;
+    padding: 0.5vw;
+    border: none;
+    color: white;
+    font-size: 2vw;
+    border-radius: 20vw;
+    background-color: rgb(6, 58, 107);
+    transition-duration: 0.5s;
+}
+
+.child_1 button:hover {
+    color: black;
+    background-color: rgb(135, 197, 255);
+    box-shadow: 0px 5px 20px 2px rgb(0, 75, 94);
+}
+
+/* Post button end's  ______________________________________________________________________*/
+
+/* Body 1st container end's______________________________________________________________________*/
+
+
+/* Body 2nd container start's______________________________________________________________________*/
+
+.child_2 {
+    width: 70%;
+    padding: 3.5vw;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 1.5vw;
+    background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(0, 187, 207));
+    box-shadow: 2px 2px 10px rgb(0, 0, 65);
+}
+
+/* Body 2nd container 1st div start's ______________________________________________________________________*/
+
+.child_2 .div_1st {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Body 2nd container 1st div 1st child start's ______________________________________________________________________*/
+
+.child_2 .div_1st_child_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    overflow-y: auto;
+}
+
+.child_2 .div_1st_child_1::-webkit-scrollbar {
+    display: none;
+}
+
+.child_2 .div_1st_child_1 img {
+    width: 7vw;
+    transition: 400ms;
+}
+
+.child_2 .div_1st_child_1 {
+    cursor: pointer;
+    color: rgb(6, 58, 107);
+    transition: 400ms;
+}
+
+.child_2 .div_1st_child_1:hover {
+    color: rgb(135, 197, 255);
+}
+
+.child_2 .div_1st_child_1 h6 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+/* Body 2nd container 1st div 1st child end's______________________________________________________________________ */
+
+/* Body 2nd container 2nd div 2nd child start's______________________________________________________________________ */
+
+.created_post_del_btn abbr div {
+    font-size: 3vw;
+    padding: 0.6vw 1.4vw;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+.created_post_del_btn abbr div:hover {
+    color: white;
+    background-color: red;
+    padding: 0.6vw 1.4vw;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Body 2nd container 2nd div 2nd child end's______________________________________________________________________ */
+
+/* Body 2nd container 1st div end's ______________________________________________________________________*/
+
+/* Content Box after posting start's */
+
+.child_2 .div_2nd {
+    background-image: linear-gradient(330deg, rgb(0, 63, 92), rgb(0, 115, 168), rgb(78, 165, 206));
+    /* background-color: #00438b; */
+    color: white;
+    font-size: 1.5vw;
+    width: 62vw;
+    height: 35vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid rgb(0, 63, 92);
+    border-radius: 0.9vw;
+}
+
+.after_post {
+    border: none !important;
+}
+
+/* Content Box after posting end's */
+
+/* Icons start's ______________________________________________________________________*/
+
+.icons_Container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icons_Container i {
+    font-size: 3vw;
+}
+
+.cmnt {
+    color: rgb(0, 225, 555);
+    -webkit-text-stroke: 0.2px rgb(0, 225, 555);
+    cursor: pointer;
+}
+
+.like {
+    color: black;
+    -webkit-text-stroke: 0.5px black;
+    cursor: pointer;
+}
+
+.likeFill {
+    font-weight: bold;
+    color: rgb(0, 105, 190);
+    -webkit-text-stroke: 1px rgb(0, 105, 190);
+}
+
+.heart {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px red;
+    cursor: pointer;
+}
+
+.heartFill {
+    color: red;
+}
+
+/* Icons end's ______________________________________________________________________*/
+
+
+/* User Comments start______________________________________________________________________'s */
+
+.comment_box {
+    width: 50vw;
+    height: 10%;
+    margin: auto;
+    padding: 1vw;
+    border-radius: 2vw;
+    text-align: center;
+    background-color: rgb(0, 187, 207);
+    position: relative;
+}
+
+.cmnt_user_container {
+    margin-left: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 0.2vw;
+}
+
+.cmnt_user_container div {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+}
+
+.cmnt_pfp {
+    width: 3.5vw;
+}
+
+.comment_box div div label {
+    font-size: 1.5vw;
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(6, 58, 107);
+    transition: 400ms;
+}
+
+.comment_box div div label:hover {
+    color: rgb(171, 224, 255);
+}
+
+.comment_box div input {
+    height: 1vw;
+    width: 25vw;
+    border-radius: 30px;
+    border: none;
+    padding: 1vw;
+}
+
+.comment_box textarea {
+    width: 46vw;
+    margin-top: 0.5vw;
+    padding: 1vw;
+    border-radius: 1vw;
+    border: none;
+}
+
+.comment_box textarea::placeholder {
+    font-weight: normal !important;
+    font-style: normal !important;
+    text-decoration: underline;
+    text-decoration-color: white !important;
+}
+
+.comment_box .textareaError::placeholder {
+    color: red;
+    opacity: 80%;
+}
+
+.comment_box .textarea_bold {
+    font-weight: bold;
+}
+
+.comment_box .textarea_italic {
+    font-style: italic;
+}
+
+.comment_box .textarea_underline {
+    text-decoration: underline;
+}
+
+/* Comment Styles & Submit buttons start's______________________________________________________________ */
+
+.cmnt_btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 1vw;
+}
+
+/* Style buttons in comment section start's________________________________ */
+
+.cmnt_styles {
+    display: flex;
+    gap: 1vw;
+}
+
+.cmnt_styles span abbr {
+    cursor: pointer;
+    font-size: 2vw;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.bold:hover {
+    color: #00438b;
+}
+
+.italic:hover {
+    color: silver;
+}
+
+.underline:hover {
+    color: rgb(255, 219, 88);
+}
+
+.eraser:hover {
+    color: white;
+}
+
+/* Style buttons in comment section end's________________________________ */
+
+/* Comment Submit button start's________________________________ */
+
+.cmnt_send_btn {
+    width: 10vw;
+    border: none;
+    color: white;
+    border-radius: 20vw;
+    background-color: rgb(6, 58, 107);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+.cmnt_send_btn:hover {
+    color: black;
+    background-color: rgb(135, 197, 255);
+    box-shadow: 0px 5px 20px 2px rgb(0, 75, 94);
+}
+
+.cmnt_send_btn .comment_send {
+    font-size: 1.5vw;
+    margin-left: -2vw;
+}
+
+.cmnt_send_btn .send_icon {
+    font-size: 1.8vw;
+    rotate: -25deg;
+    position: absolute;
+    right: 2vw;
+    top: 0.1vw;
+}
+
+/* Comment Submit button end's________________________________ */
+
+/* Comment Styles & Submit buttons end's______________________________________________________________ */
+
+/* Posted Comments start's___________________________________________________________ */
+
+.posted_comment {
+    width: 40vw;
+    margin: auto;
+    background-color: rgb(0, 229, 255);
+    border-radius: 1.5vw;
+}
+
+.posted_cmnt_name_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.posted_cmnt_name_container .div_1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.posted_cmnt_pfp {
+    width: 3vw;
+}
+
+.posted_cmnt_name_container div {
+    font-size: 1.3vw;
+    line-height: 1.5vw;
+}
+
+.posted_cmnt_name_container .div_1 span {
+    font-weight: 700;
+    cursor: pointer;
+    color: rgb(6, 58, 107);
+    transition: 400ms;
+}
+
+.posted_cmnt_name_container .div_1 span:hover {
+    color: rgb(255, 255, 255);
+}
+
+.posted_cmnt_name_container .div_1 div .date {
+    font-size: 1vw;
+}
+
+.posted_cmnt_del_btn {
+    margin-right: -0.8vw;
+}
+
+.del_cmnt {
+    font-size: 3vw;
+    padding: 0.6vw 0.7vw;
+    border-radius: 50%;
+    transition-duration: 0.5s;
+}
+
+.del_cmnt:hover {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.posted_coment_content {
+    background-color: rgb(0, 217, 255);
+    border-radius: 1vw;
+    border: 1px solid darkblue;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+.posted_coment_content::-webkit-scrollbar {
+    display: none;
+}
+
+.post_icons_Container {
+    width: 100%;
+    margin-top: 1vw;
+    margin-bottom: -1vw;
+    display: flex;
+    justify-content: start;
+    gap: 2vw;
+}
+
+.post_icons_Container i {
+    font-size: 1.5vw;
+}
+
+.post_like {
+    color: black;
+    -webkit-text-stroke: 0.5px black;
+    cursor: pointer;
+}
+
+.likeFill {
+    font-weight: bold;
+    color: rgb(0, 105, 190);
+    -webkit-text-stroke: 1px rgb(0, 105, 190);
+}
+
+.post_heart {
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 2px red;
+    cursor: pointer;
+}
+
+.heartFill {
+    color: red;
+}
+
+/* .posted_cmnt_name_container {} */
+
+/* Posted Comments end's___________________________________________________________ */
+
+/* User Comments end's______________________________________________________________________ */
+
+
+/* Body 2nd container end's______________________________________________________________________*/
+
+/* Body css end's */
