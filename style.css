@@ -121,6 +121,8 @@ body {
 }
 
 .div_1_child_1st {
+    font-size: 2vw;
+    font-weight: 600;
     cursor: pointer;
     color: rgb(6, 58, 107);
     transition: 400ms;
@@ -708,3 +710,125 @@ abbr .fa-solid {
 /* Body 2nd container end's______________________________________________________________________*/
 
 /* Body css end's */
+
+@media only screen and (max-width: 425px) {
+
+    /* * {
+        font-size: 4vw;
+    } */
+    .child_1 {
+        font-size: 2.5vw;
+        width: 80%;
+        padding: 4.6vw;
+        /* padding: 50px; */
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        background-image: radial-gradient(rgba(255, 255, 255, 0), rgb(0, 187, 207));
+    }
+
+    .div_1_child_1st label {
+        font-size: 3vw !important;
+        cursor: pointer;
+        color: rgb(6, 58, 107);
+        transition: 400ms;
+    }
+
+    .child_1 button {
+        width: 36vw;
+        margin: auto;
+        padding: 0.5vw;
+        border: none;
+        color: white;
+        font-size: 2.5vw;
+        border-radius: 20vw;
+        background-color: rgb(6, 58, 107);
+        transition-duration: 0.5s;
+    }
+
+    .child_2 .div_1st_child_1 div {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+        font-weight: bold;
+    }
+
+    .child_2 .div_2nd {
+        background-image: linear-gradient(330deg, rgb(0, 63, 92), rgb(0, 115, 168), rgb(78, 165, 206));
+        color: white;
+        font-size: 2.5vw;
+        width: 61.5vw;
+        height: 35vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+        margin: auto;
+        padding: 10px;
+        border: 1px solid rgb(0, 63, 92);
+        border-radius: 0.9vw;
+    }
+
+    .comment_box div div label {
+        font-size: 2.5vw;
+        font-weight: 700;
+        cursor: pointer;
+        color: rgb(6, 58, 107);
+        transition: 400ms;
+    }
+
+    .comment_box div input {
+        font-size: 2.5vw;
+        height: 1vw;
+        width: 25vw;
+        padding: 0.9vw;
+        border-radius: 30px;
+        border: none;
+        padding: 1vw;
+    }
+
+    .comment_box textarea {
+        font-size: 2.5vw;
+        width: 46vw;
+        margin-top: 0.5vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        border: none;
+    }
+
+    .cmnt_styles span abbr {
+        cursor: pointer;
+        font-size: 2.5vw;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .cmnt_send_btn .comment_send {
+        font-size: 2.5vw;
+        margin-left: -1.5vw;
+    }
+
+    .posted_coment_content {
+        background-color: rgb(0, 217, 255);
+        border-radius: 1vw;
+        border: 1px solid darkblue;
+        padding: 0.5vw;
+        margin-top: 1vw;
+        font-size: 2.5vw;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+
+    .post_icons_Container i {
+        font-size: 2.5vw;
+    }
+
+    .posted_cmnt_name_container div {
+        font-size: 2vw;
+        line-height: 1.5vw;
+    }
+
+    .posted_cmnt_name_container .div_1 div .date {
+        font-size: 1.5vw;
+    }
+
+}

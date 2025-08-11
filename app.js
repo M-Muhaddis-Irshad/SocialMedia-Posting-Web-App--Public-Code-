@@ -1,8 +1,3 @@
-// const post_Arr = [];
-
-// const randomId = Math.random()
-// console.log(randomId);
-
 // Textarea Function Start's
 
 let final_text_clr = "";
@@ -47,6 +42,7 @@ const full_date = `
                  ${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()} 
                  At: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}
 `;
+
 // console.log(full_date);
 
 function post() {
@@ -77,9 +73,6 @@ function post() {
     textarea_bg.style.color = `black`;
 
     let newPostDiv = document.getElementById("body_div");
-
-    // post_Arr.push(
-    // )
 
     newPostDiv.innerHTML += `
     <div class="child_2" id="created_post">
@@ -144,14 +137,6 @@ function post() {
     </div>
 `
 
-    // arr = [1,2,3,4,5,6,7,8,9,0]
-
-    // for (let i = 0; i < post_Arr.length; i++) {
-    //     const element = post_Arr[i];
-    //     console.log(element);
-    // }
-
-    textarea_bg.style.backgroundImage = `none`;
     textarea_bg.value = ""
     final_text_clr = "black";
     userName.value = "";
@@ -192,9 +177,9 @@ document.getElementById("user_name").addEventListener("keydown",
 //     if (event.key === "Enter") post();
 // });
 
-// Comment Box Section start's
-
 // Both codes are doing same work just syntax is changed_________________________________
+
+// Comment Box Section start's
 
 function showCommentBox(cmnt_icon_clicked) {
     const post = cmnt_icon_clicked.closest(`#created_post`);
@@ -372,72 +357,3 @@ function post_comment(cmnt_send_btn_click) {
 }
 
 // Posted Comments end's
-
-
-
-
-
-// newPostDiv.innerHTML += `
-//     <div class="child_2" id="created_post">
-
-//         <div class="div_1st">
-
-//             <div class="div_1st_child_1">
-//                 <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
-
-//                 <h5>
-//                     <span>
-//                         ${userName.value}
-//                     </span>
-//                     <span>
-//                         <h6>
-//                             ${full_date}
-//                         </h6>
-//                     </span>
-//                 </h5>
-
-//             </div>
-
-//             <div class="div_1st_child_2">
-
-//                 <abbr onclick="this.parentElement.parentElement.parentElement.remove()" title="Delete Post">
-//                     <div class="del_post">
-//                         <i class="fa-solid fa-trash"></i>
-//                     </div>
-//                 </abbr>
-
-//             </div>
-
-
-//         </div>
-
-//         <!-- Created Post -->
-
-
-//         <div class="div_2nd after_post mt-3 mb-3" style="background-image: ${Crnt_bgImage}; color: ${final_text_clr};">
-//             ${textarea_bg.value}
-//         </div>
-
-
-//         <!-- Created Post -->
-
-//         <!-- Icons -->
-
-//         <div class="icons_Container">
-
-//             <i onclick="showCommentBox()" class="material-symbols-outlined cmnt">
-//                 chat
-//             </i>
-
-//             <i onclick="this.classList.add('likeFill')" class="material-symbols-outlined like">
-//                 thumb_up
-//             </i>
-
-//             <i onclick="this.classList.add('heartFill')" class="material-icons heart">
-//                 favorite
-//             </i>
-
-//         </div>
-
-//     </div>
-// `
