@@ -45,8 +45,7 @@ function apply_bg_clr(color) {
 const d = new Date();
 const full_date = `
                  ${d.getDate()}/${d.getMonth() + 1}/${d.getFullYear()} 
-                 <br>
-                 ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}
+                 At: ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}
 `;
 // console.log(full_date);
 
@@ -90,16 +89,14 @@ function post() {
             <div class="div_1st_child_1">
                 <img src="pfp/Profile_pic2.png" alt="Blank Profile Picture">
 
-                <h5>
+                <div>
                     <span>
                         ${userName.value}
                     </span>
                     <span>
-                        <h6>
                             ${full_date}
-                        </h6>
                     </span>
-                </h5>
+                </div>    
 
             </div>
 
@@ -320,7 +317,7 @@ function post_comment(cmnt_send_btn_click) {
     cmnt_txtarea.classList.remove("textarea_bold", "textarea_italic", "textarea_underline");
 
     cmnt_post.innerHTML += `
-    <div class="posted_comment my-4 p-4">
+    <div class="posted_comment my-2 p-2">
 
                 <div class="posted_cmnt_name_container">
 
