@@ -317,7 +317,7 @@ function post_comment(cmnt_send_btn_click) {
     cmnt_txtarea.classList.remove("textarea_bold", "textarea_italic", "textarea_underline");
 
     cmnt_post.innerHTML += `
-    <div class="posted_comment my-2 p-2">
+    <div class="posted_comment my-3 p-3">
 
                 <div class="posted_cmnt_name_container">
 

@@ -5,10 +5,6 @@ body {
     height: 100%;
 }
 
-/* * {
-    font-size: 2vw;
-} */
-
 /* Navbar css start's ______________________________________________________________________*/
 
 .navbar {
@@ -94,7 +90,7 @@ body {
 }
 
 .child_1 {
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 80%;
     padding: 4.6vw;
     /* padding: 50px; */
@@ -253,7 +249,7 @@ abbr .fa-solid {
     padding: 0.5vw;
     border: none;
     color: white;
-    font-size: 2vw;
+    font-size: 1.5vw;
     border-radius: 20vw;
     background-color: rgb(6, 58, 107);
     transition-duration: 0.5s;
@@ -325,7 +321,7 @@ abbr .fa-solid {
 .child_2 .div_1st_child_1 div {
     display: flex;
     flex-direction: column;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -366,7 +362,7 @@ abbr .fa-solid {
     /* background-color: #00438b; */
     color: white;
     font-size: 1.5vw;
-    width: 62vw;
+    width: 61.5vw;
     height: 35vw;
     overflow-x: auto;
     overflow-y: hidden;
@@ -432,7 +428,7 @@ abbr .fa-solid {
     height: 10%;
     margin: auto;
     padding: 1vw;
-    border-radius: 2vw;
+    border-radius: 1.5vw;
     text-align: center;
     background-color: rgb(0, 187, 207);
     position: relative;
@@ -444,7 +440,7 @@ abbr .fa-solid {
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 0.2vw;
+    gap: 0.1.5vw;
 }
 
 .cmnt_user_container div {
@@ -458,7 +454,7 @@ abbr .fa-solid {
 }
 
 .comment_box div div label {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: 700;
     cursor: pointer;
     color: rgb(6, 58, 107);
@@ -470,7 +466,7 @@ abbr .fa-solid {
 }
 
 .comment_box div input {
-    font-size: 2vw;
+    font-size: 1.5vw;
     height: 1vw;
     width: 25vw;
     padding: 0.9vw;
@@ -480,7 +476,7 @@ abbr .fa-solid {
 }
 
 .comment_box textarea {
-    font-size: 2vw;
+    font-size: 1.5vw;
     width: 46vw;
     margin-top: 0.5vw;
     padding: 1vw;
@@ -529,7 +525,7 @@ abbr .fa-solid {
 
 .cmnt_styles span abbr {
     cursor: pointer;
-    font-size: 2vw;
+    font-size: 1.5vw;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -575,14 +571,14 @@ abbr .fa-solid {
 
 .cmnt_send_btn .comment_send {
     font-size: 1.5vw;
-    margin-left: -2vw;
+    margin-left: -1.5vw;
 }
 
 .cmnt_send_btn .send_icon {
     font-size: 1.8vw;
     rotate: -25deg;
     position: absolute;
-    right: 2vw;
+    right: 1.5vw;
     top: 0.1vw;
 }
 
@@ -658,7 +654,7 @@ abbr .fa-solid {
     border: 1px solid darkblue;
     padding: 0.5vw;
     margin-top: 1vw;
-    font-size: 2vw;
+    font-size: 1.5vw;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -673,7 +669,7 @@ abbr .fa-solid {
     margin-bottom: -1vw;
     display: flex;
     justify-content: start;
-    gap: 2vw;
+    gap: 1.5vw;
 }
 
 .post_icons_Container i {
